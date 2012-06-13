@@ -628,6 +628,7 @@ Pouch.Errors = {
       };
 
       function isCompleted() {
+        console.log("6: in isCompleted. completed: " + completed + ". pending: " + pending);  // TKD remove
         if (completed && pending === 0) {
           result.end_time = new Date();
           writeCheckpoint(src, target, last_seq, function() {
