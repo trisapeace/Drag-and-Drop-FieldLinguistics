@@ -54,7 +54,62 @@ define([
     render : function() {
       Utils.debug("DLATEX render: " + this.el);
 
-      this.$el.html(this.template(this.model.toJSON()));
+      // this.$el.html(this.template(this.model.toJSON()));
+      
+      var words = 
+        '<div class=wrapper>' +
+          '<ol class=sentence>' +
+          '<li>' +
+            '<ol class=word>' +
+              '<li lang=es>yo</li>' +
+              '<li lang=en_MORPH>I</li>' +
+            '</ol>' +
+          '</li>' +
+      
+          '<li>' +
+            '<ol class=word>' +
+              '<li lang=es>habl-o</li>' +
+              '<li lang=en_MORPH>speak-1sg.PRES</li>' +
+            '</ol>' +
+          '</li>' +
+      
+          '<li>' +
+            '<ol class=word>' +
+              '<li lang=es>español</li>' +
+              '<li lang=en_MORPH>Spanish</li>' +
+            '</ol>' +
+          '</li>' +
+                
+        '</ol>' +
+      '</div>' +
+      
+      '<div style="width:12em" class=wrapper>' +
+          '<ol class=sentence>' +
+          '<li>' +
+            '<ol class=word>' +
+              '<li lang=es>yo</li>' +
+              '<li lang=en_MORPH>I</li>' +
+            '</ol>' +
+          '</li>' +
+      
+          '<li>' +
+            '<ol class=word>' +
+              '<li lang=es>habl-o</li>' +
+              '<li lang=en_MORPH>speak-1sg.PRES</li>' +
+            '</ol>' +
+          '</li>' +
+      
+          '<li>' +
+            '<ol class=word>' +
+              '<li lang=es>español</li>' +
+              '<li lang=en_MORPH>Spanish</li>' +
+            '</ol>' +
+          '</li>' +
+                
+        '</ol>' +
+      '</div>';
+      
+      this.$el.html(words);
 
       return this;
     }
