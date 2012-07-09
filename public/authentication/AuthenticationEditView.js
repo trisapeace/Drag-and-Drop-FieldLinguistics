@@ -57,7 +57,7 @@ define([
       "click .logout" : "logout",
       "click .login" : "login",
       "click #login_form" : function(e) {
-        e.stopPropagation();
+        // e.stopPropagation();
       }
       
     },

@@ -233,8 +233,8 @@ define([
           }
         });
       },
-      "click .dropdown-menu" : function(e) {
-        e.stopPropagation();
+      "click .welcome-login" : function(e) {
+        // e.stopPropagation();
       }
     },
     
